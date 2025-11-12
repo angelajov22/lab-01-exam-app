@@ -3,6 +3,7 @@ import '../models/exam_model.dart';
 import 'package:intl/intl.dart';
 
 class ExamData extends StatelessWidget {
+
   final Exam exam;
 
   const ExamData({super.key, required this.exam});

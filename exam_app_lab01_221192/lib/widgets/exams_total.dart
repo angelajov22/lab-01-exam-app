@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/exam_model.dart';
 
 class ExamTotal extends StatelessWidget {
+
   final List<Exam> exams;
 
   const ExamTotal({super.key, required this.exams});

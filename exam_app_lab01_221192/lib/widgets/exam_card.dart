@@ -3,6 +3,7 @@ import '../models/exam_model.dart';
 import '../screens/details.dart';
 
 class ExamCard extends StatelessWidget {
+
   final Exam exam;
 
   const ExamCard({super.key, required this.exam});

@@ -3,6 +3,7 @@ import '../models/exam_model.dart';
 import '../widgets/exam_card.dart';
 
 class ExamGrid extends StatelessWidget {
+
   final List<Exam> exams;
 
   const ExamGrid({super.key, required this.exams});

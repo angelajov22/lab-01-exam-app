@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import '../models/exam_model.dart';
 import '../widgets/exam_grid.dart';
-import '../widgets/exams_total.dart'; // твојот widget за вкупно испити
+import '../widgets/exams_total.dart';
 
 class HomeScreen extends StatelessWidget {
+
   final List<Exam> exams;
 
   const HomeScreen({super.key, required this.exams});

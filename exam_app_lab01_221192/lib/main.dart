@@ -8,6 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+
   const MyApp({super.key});
 
   @override
@@ -24,10 +25,8 @@ class MyApp extends StatelessWidget {
             builder: (_) => HomeScreen(exams: exams),
           );
         } else if (settings.name == "/details") {
-          final exam = settings.arguments as Exam;
           return MaterialPageRoute(
             builder: (_) => ExamDetails(),
-            settings: RouteSettings(arguments: exam),
           );
         }
         return null;
@@ -36,14 +35,4 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class ExamDetailPlaceholder extends StatelessWidget {
-  const ExamDetailPlaceholder({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text("Exam Details")),
-    );
-  }
-}
 
